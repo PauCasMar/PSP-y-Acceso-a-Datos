@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface SerieRepository extends JpaRepository<Serie, Long> {
 	
-	List<Serie> findByDescripcionContaining(String descripcion);
+	public List<Serie> findByDescripcionContaining(String descripcion);
 
 }
