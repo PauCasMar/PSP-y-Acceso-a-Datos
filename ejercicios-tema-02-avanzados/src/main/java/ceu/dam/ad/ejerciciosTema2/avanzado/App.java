@@ -7,6 +7,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio1.service.SeriesService;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio1.test.Test1;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.test.Test2;
+import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.test.Test3;
 
 @SpringBootApplication
 public class App {
@@ -19,7 +20,10 @@ public class App {
 		//test1.test();
 		
 		Test2 test2 = context.getBean(Test2.class);
-		test2.test();
+		//test2.test();
+		
+		Test3 test3 = context.getBean(Test3.class);
+		test3.test();
 	}
 
 }

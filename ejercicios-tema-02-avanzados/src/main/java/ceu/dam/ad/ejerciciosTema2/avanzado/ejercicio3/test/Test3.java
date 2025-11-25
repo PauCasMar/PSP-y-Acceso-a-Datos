@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.modelo.CentroComercial;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.modelo.Marca;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.modelo.Pais;
@@ -14,7 +17,7 @@ import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.service.ComercialService;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.service.ComercialServiceImpl;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.service.NotFoundException;
 
-
+@Component
 public class Test3 {
 	// CADA VEZ QUE EJECUTES EL TEST, PASA ESTE SCRIPT EN BBDD:
 //	DELETE FROM centro_comercial_marcas;
@@ -22,8 +25,12 @@ public class Test3 {
 //	DELETE FROM centro_comercial;
 //	DELETE FROM marcas;
 
+	@Autowired
+	ComercialService service;
+	
 	public void test() {
-		ComercialService service = new ComercialServiceImpl();
+		
+
 		Scanner sc = new Scanner(System.in);
 		Pais paisUS = null;
 		Pais paisES = null;

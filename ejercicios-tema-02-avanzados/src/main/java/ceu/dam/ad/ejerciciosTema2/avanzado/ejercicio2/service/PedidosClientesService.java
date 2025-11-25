@@ -1,5 +1,7 @@
 package ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.service;
 
+import java.util.List;
+
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.model.Articulo;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.model.Cliente;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.model.Pedido;
@@ -38,6 +40,10 @@ public interface PedidosClientesService {
 	/** Consulta el pedido con el uuid indicado. Si no existe, lanzará NotFoundExcepion.
 	 * El pedido devuelto estará completo: con todas sus líneas, artículos y cliente.	 */
 	public Pedido consultarPedido(String uuid) throws NotFoundException, PedidosClientesServiceException;
+	
+	/** Consulta todos los pedidos que incluyan alguna línea donde se haya comprado el artículo con la descripción indicada
+	 * Si no hay ningún pedido, se lanzará NotFoundException. */
+	public List<Pedido> consultarPedidosByArticulo(String descripcionArticulo)	throws PedidosClientesServiceException, NotFoundException;
 
 
 	

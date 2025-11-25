@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio1.model.Serie;
 import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio1.repository.SerieRepository;
+import ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio3.repository.MarcaRepository;
 import jakarta.transaction.Transactional;
 
 @Service
@@ -15,6 +16,7 @@ public class SeriesServiceImpl implements SeriesService {
 	
 	@Autowired
 	private SerieRepository repoSerie;
+
 	
 	@Override
 	public Serie consultarSerie(Long idSerie) throws SerieNotFoundException, SeriesServiceException {

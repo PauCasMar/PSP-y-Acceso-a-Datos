@@ -1,5 +1,6 @@
 package ceu.dam.ad.ejerciciosTema2.avanzado.ejercicio2.service;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -99,6 +100,14 @@ public class PedidosClientesServiceImpl implements PedidosClientesService {
 		try {
 		return pedRepo.findById(UUID.fromString(uuid))
 				.orElseThrow(() -> new NotFoundException("No he encontrado el pedido con el UUID " + uuid));
+		}catch (DataAccessException e) {
+			throw new PedidosClientesServiceException("El pedido no existe en la BBDD ", e);
+		}
+	}
+	@Override
+	public List<Pedido> consultarPedidosByArticulo(String descripcionArticulo)	throws PedidosClientesServiceException, NotFoundException{
+		try {
+			return null;
 		}catch (DataAccessException e) {
 			throw new PedidosClientesServiceException("El pedido no existe en la BBDD ", e);
 		}
