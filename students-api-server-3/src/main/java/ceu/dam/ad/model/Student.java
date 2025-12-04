@@ -1,10 +1,7 @@
 package ceu.dam.ad.model;
 
 import java.time.LocalDate;
-import java.util.Date;
-
-import org.springframework.aot.generate.GeneratedTypeReference;
-
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -32,10 +29,11 @@ public class Student {
 	private LocalDate dateOfBirth;
 	private String gender;
 	private String program;
+	
+	@Column(name="created_at")
 	private LocalDate createdAt;
 
  public Integer getAge() {
-	  
-	 return dateOfBirth.until(LocalDate.now()).getYears();
+	  return dateOfBirth.until(LocalDate.now()).getYears();
  }
 }

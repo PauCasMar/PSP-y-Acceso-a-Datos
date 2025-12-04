@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import ceu.dam.ad.dto.FilterDto;
+import ceu.dam.ad.exception.StudentNotFoundException;
 import ceu.dam.ad.model.Student;
 import ceu.dam.ad.service.StudentDuplicateException;
-import ceu.dam.ad.service.StudentNotFoundException;
 import ceu.dam.ad.service.StudentService;
 
 @Component

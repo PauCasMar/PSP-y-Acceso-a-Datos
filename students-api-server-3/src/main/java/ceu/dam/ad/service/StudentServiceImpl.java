@@ -12,6 +12,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import ceu.dam.ad.dto.FilterDto;
+import ceu.dam.ad.exception.StudentNotFoundException;
 import ceu.dam.ad.model.Student;
 import ceu.dam.ad.repository.StudentRepository;
 

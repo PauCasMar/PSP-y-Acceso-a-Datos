@@ -3,6 +3,7 @@ package ceu.dam.ad.service;
 import java.util.List;
 
 import ceu.dam.ad.dto.FilterDto;
+import ceu.dam.ad.exception.StudentNotFoundException;
 import ceu.dam.ad.model.Student;
 
 public interface StudentService {
