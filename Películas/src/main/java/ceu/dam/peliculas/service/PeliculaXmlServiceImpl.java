@@ -1,8 +1,8 @@
-package ceu.dam.libro.service;
+package ceu.dam.peliculas.service;
 
 import java.io.File;
 import java.util.List;
-import java.util.logging.Logger;
+
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -11,22 +11,25 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.slf4j.LoggerFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import ceu.dam.libro.model.Largometraje;
-import ceu.dam.libro.model.Persona;
-import ceu.dam.libro.test.App;
+import ceu.dam.peliculas.model.Largometraje;
+import ceu.dam.peliculas.model.Persona;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 public class PeliculaXmlServiceImpl implements PeliculasXmlService {
 	
 	
-		Logger logger = Logger.getLogger(App.class);
+	private static final Logger logger = LoggerFactory.getLogger(PeliculaXmlServiceImpl.class);
 
 	public void exportarXML(List<Largometraje> peliculas, String fichero) throws PeliculaXMLExportException {
 
 		try {
-			logger.info("Iniciando la construcción del archivo ejemplo en carpeta temporal");
+			//logger.info("Iniciando la construcción del archivo ejemplo en carpeta temporal");
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document xml = builder.newDocument();
@@ -85,7 +88,7 @@ public class PeliculaXmlServiceImpl implements PeliculasXmlService {
 			transformer.transform(source, result);
 
 		} catch (Exception e) {
-			logger.error("Erorr al generar el documento XML", e);
+		//	logger.error("Erorr al generar el documento XML", e);
 			throw new PeliculaXMLExportException("Error generando XML", e);
 		}
 

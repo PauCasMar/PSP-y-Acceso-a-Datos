@@ -1,4 +1,4 @@
-package ceu.dam.libro.model;
+package ceu.dam.peliculas.model;
 
 import java.util.ArrayList;
 import java.util.List;

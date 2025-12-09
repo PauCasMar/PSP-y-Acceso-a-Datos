@@ -1,4 +1,4 @@
-package ceu.dam.libro.service;
+package ceu.dam.peliculas.service;
 
 public class PeliculaXMLExportException extends Exception {
 

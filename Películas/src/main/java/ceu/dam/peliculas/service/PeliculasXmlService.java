@@ -1,8 +1,9 @@
-package ceu.dam.libro.service;
+package ceu.dam.peliculas.service;
 
 
 import java.util.List;
-import ceu.dam.libro.model.Largometraje;
+
+import ceu.dam.peliculas.model.Largometraje;
 
 public interface PeliculasXmlService {
 

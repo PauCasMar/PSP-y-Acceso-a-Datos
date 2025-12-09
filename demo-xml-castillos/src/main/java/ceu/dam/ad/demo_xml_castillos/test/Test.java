@@ -14,13 +14,37 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Castillo castillo = createCastillo();
+		//Castillo castillo = createCastillo();
 		CastilloXmlService service = new CastilloXmlServiceImpl();
 		try {
+			List<Castillo> castillos = new ArrayList<>();
+			castillos.add(createCastillo());
+			castillos.add(createCastillo());
+			castillos.add(createCastillo());
+			service.exportCastillosToXmlJackson("c:/temporal/castillosJackson.xml", castillos);
+			
+		//	Castillo castillo = createCastillo();
+		//	service.exportCastilloToXmlJackson("c:/temporal/castilloJackson.xml", castillo);
+			
+			
+//			Castillo castillo = service.importarCastilloFromXml("c:/temporal/castillo.xml");
+//			System.out.println("CASTILLO LEIDO DE XML CON LOS SIGUIENTES DATOS:");
+//			System.out.println("Foso:" + castillo.getFoso());
+//			System.out.println("Caballeros: ");
+//			castillo.getCaballeros().forEach(System.out::println);
+//			System.out.println("Dragones: ");
+//			castillo.getDragones().forEach(System.out::println);
+			
+		}catch (CastilloXmlException e) {
+			e.printStackTrace();
+		}
+		
+		
+	/*	try {
 		service.exportCastilloToXml("c:/temporal/castillo.xml",  castillo);
 		}catch(CastilloXmlException e) {
 			e.printStackTrace();
-		}	
+		}	*/
 	}
 		
 	public static Castillo createCastillo() {
