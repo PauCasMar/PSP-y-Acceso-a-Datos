@@ -155,10 +155,19 @@ public class UserServiceImpl  implements UserService, UserDetailsService {
 		}
 	}
 	
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return repository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username));
-    }
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        return repository.findByUsername(username)
+//                .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username));
+//    }
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	    User user = repository.findByUsername(username)
+	            .orElseThrow(() -> new UsernameNotFoundException("Usuario no encontrado: " + username));
+
+	    System.out.println(">>> PASSWORD EN BD: " + user.getPassword());
+	    return user;
+	}
 
 }
