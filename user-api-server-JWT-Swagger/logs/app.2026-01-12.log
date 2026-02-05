@@ -1,0 +1,910 @@
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h6m32s334ms433µs300ns).
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@d3089be ((conn=96) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@de3860b ((conn=102) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@4979370 ((conn=101) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2c1e41f0 ((conn=99) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@f7532a2 ((conn=100) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@1e372e99 ((conn=103) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2603323c ((conn=97) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@784ce6cd ((conn=98) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@5e8a2b44 ((conn=95) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:17 WARN  [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@796e85ea ((conn=94) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2026-01-12 08:40:52 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 21612 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 08:40:52 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 08:40:52 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 08:40:54 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 08:40:54 INFO  [main] ceu.dam.ad.users.App - Started App in 2.432 seconds (process running for 2.959)
+2026-01-12 08:40:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 08:40:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 08:40:59 ERROR [http-nio-8080-exec-1] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users/2.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 08:42:20 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 5596 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 08:42:20 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 08:42:20 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 08:42:22 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 08:42:23 INFO  [main] ceu.dam.ad.users.App - Started App in 2.554 seconds (process running for 3.093)
+2026-01-12 08:42:23 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 08:42:23 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 08:43:15 ERROR [http-nio-8080-exec-1] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users/2.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 08:43:33 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 28288 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 08:43:33 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 08:43:33 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 08:43:35 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 08:43:36 INFO  [main] ceu.dam.ad.users.App - Started App in 2.54 seconds (process running for 3.084)
+2026-01-12 08:43:36 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 08:43:36 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 08:44:17 ERROR [http-nio-8080-exec-1] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users/2.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 09:01:25 ERROR [http-nio-8080-exec-2] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users/2.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 09:03:38 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 22872 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:03:38 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:03:38 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:03:39 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:03:41 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:03:41 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1700945c-f6ce-4937-afcf-34821a0e9e3c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:03:41 INFO  [main] ceu.dam.ad.users.App - Started App in 2.899 seconds (process running for 3.555)
+2026-01-12 09:03:41 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:03:41 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:03:57 DEBUG [http-nio-8080-exec-1] c.d.ad.users.service.UserServiceImpl - Consultando usuario con id 2
+2026-01-12 09:06:08 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 8484 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:06:08 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:06:08 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:06:09 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:06:10 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:06:10 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 87f79b5f-20b1-4149-9fbb-088a6f39c43f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:06:11 INFO  [main] ceu.dam.ad.users.App - Started App in 2.94 seconds (process running for 3.515)
+2026-01-12 09:06:11 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:06:11 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:12:01 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 21412 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:12:01 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:12:01 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:12:02 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:12:03 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:12:03 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d066b875-df26-48b5-8a01-0d8ad4b1ddf6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:12:04 INFO  [main] ceu.dam.ad.users.App - Started App in 2.759 seconds (process running for 3.306)
+2026-01-12 09:12:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:12:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:15:25 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 25820 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:15:25 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:15:25 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:15:26 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:15:27 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:15:27 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8f2f6433-a936-4984-8eb4-eddba2b488c0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:15:27 INFO  [main] ceu.dam.ad.users.App - Started App in 2.827 seconds (process running for 3.369)
+2026-01-12 09:15:27 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:15:27 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:17:13 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 17396 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:17:13 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:17:13 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:17:14 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:17:15 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:17:15 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1e98fc52-c85f-4265-80f6-e2dec82abfbd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:17:16 INFO  [main] ceu.dam.ad.users.App - Started App in 2.73 seconds (process running for 3.275)
+2026-01-12 09:17:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:17:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:17:34 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Consultando usuario con id 2
+2026-01-12 09:17:44 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 23724 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:17:44 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:17:44 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:17:45 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:17:46 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:17:46 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9d4d0426-2667-4e30-bbde-83b4265c6983
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:17:46 INFO  [main] ceu.dam.ad.users.App - Started App in 2.717 seconds (process running for 3.26)
+2026-01-12 09:17:46 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:17:46 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:18:38 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 8336 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 09:18:38 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:18:38 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:18:39 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:18:41 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:18:41 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 85fe8c1e-2a2a-4f29-83ae-4d9399cc6f1e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:18:41 INFO  [main] ceu.dam.ad.users.App - Started App in 2.741 seconds (process running for 3.281)
+2026-01-12 09:18:41 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:18:41 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:20:14 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 26464 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 09:20:14 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:20:14 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:20:15 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:20:16 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:20:16 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 60d84442-c411-44a6-a904-875de76ea870
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:20:16 INFO  [main] ceu.dam.ad.users.App - Started App in 2.773 seconds (process running for 3.39)
+2026-01-12 09:20:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:20:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:20:20 ERROR [http-nio-8080-exec-2] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idUser' for method parameter type Long is not present
+	at org.springframework.web.servlet.mvc.method.annotation.PathVariableMethodArgumentResolver.handleMissingValue(PathVariableMethodArgumentResolver.java:101)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleMissingValue(AbstractNamedValueMethodArgumentResolver.java:234)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at ceu.dam.ad.users.security.ApiKeyFilter.doFilterInternal(ApiKeyFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 09:22:51 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 26412 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 09:22:51 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:22:51 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:22:52 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:22:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:22:53 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fb875fc9-d452-4eae-b7a8-21e0c5d8ea42
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:22:54 INFO  [main] ceu.dam.ad.users.App - Started App in 2.817 seconds (process running for 3.366)
+2026-01-12 09:22:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:22:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:22:57 ERROR [http-nio-8080-exec-2] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idUser' for method parameter type Long is not present
+	at org.springframework.web.servlet.mvc.method.annotation.PathVariableMethodArgumentResolver.handleMissingValue(PathVariableMethodArgumentResolver.java:101)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleMissingValue(AbstractNamedValueMethodArgumentResolver.java:234)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at ceu.dam.ad.users.security.ApiKeyFilter.doFilterInternal(ApiKeyFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 09:25:18 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 22732 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 09:25:18 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:25:18 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:25:19 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:25:20 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:25:20 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b87ee12c-0e4c-4c44-abf3-6e350930fb56
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:25:21 INFO  [main] ceu.dam.ad.users.App - Started App in 2.808 seconds (process running for 3.354)
+2026-01-12 09:25:21 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:25:21 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:25:24 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Consultando usuario con id 2
+2026-01-12 09:27:08 DEBUG [http-nio-8080-exec-3] c.d.ad.users.service.UserServiceImpl - Creando nuevo usuario: User(id=null, username=test14, email=tes14t@test.com, password=11243, createdDate=null, lastLoginDate=null)
+2026-01-12 09:27:08 DEBUG [http-nio-8080-exec-3] c.d.ad.users.service.UserServiceImpl - Usuario creado con éxito con id 12
+2026-01-12 09:29:31 ERROR [http-nio-8080-exec-6] c.d.a.u.e.GlobalExceptionHandler - Error inesperado. Consultar traza 
+org.springframework.web.bind.MissingPathVariableException: Required URI template variable 'idUser' for method parameter type Long is not present
+	at org.springframework.web.servlet.mvc.method.annotation.PathVariableMethodArgumentResolver.handleMissingValue(PathVariableMethodArgumentResolver.java:101)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleMissingValue(AbstractNamedValueMethodArgumentResolver.java:234)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at ceu.dam.ad.users.security.ApiKeyFilter.doFilterInternal(ApiKeyFilter.java:30)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2026-01-12 09:29:53 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 27152 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 09:29:53 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 09:29:53 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 09:29:53 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 09:29:55 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 09:29:55 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c5986093-f8e2-4e3d-82b5-c12db3c2071a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 09:29:55 INFO  [main] ceu.dam.ad.users.App - Started App in 2.771 seconds (process running for 3.32)
+2026-01-12 09:29:55 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 09:29:55 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 09:29:58 DEBUG [http-nio-8080-exec-1] c.d.ad.users.service.UserServiceImpl - Actualizacion password de usuario con id: 2
+2026-01-12 09:29:58 DEBUG [http-nio-8080-exec-1] c.d.ad.users.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2026-01-12 09:30:39 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Actualizacion password de usuario con id: 11
+2026-01-12 09:30:39 DEBUG [http-nio-8080-exec-2] c.d.ad.users.service.UserServiceImpl - Pass indicada para cambio incorrecta 
+2026-01-12 09:30:56 DEBUG [http-nio-8080-exec-3] c.d.ad.users.service.UserServiceImpl - Actualizacion password de usuario con id: 12
+2026-01-12 09:30:56 DEBUG [http-nio-8080-exec-3] c.d.ad.users.service.UserServiceImpl - Password cambiada con exito
+2026-01-12 09:32:25 DEBUG [http-nio-8080-exec-4] c.d.ad.users.service.UserServiceImpl - Realizando login con usuario test14
+2026-01-12 09:32:25 DEBUG [http-nio-8080-exec-4] c.d.ad.users.service.UserServiceImpl - Intentando login por email...
+2026-01-12 09:32:25 DEBUG [http-nio-8080-exec-4] c.d.ad.users.service.UserServiceImpl - Intentando login por username...
+2026-01-12 09:32:25 DEBUG [http-nio-8080-exec-4] c.d.ad.users.service.UserServiceImpl - Actualizando fecha de último login
+2026-01-12 09:32:25 DEBUG [http-nio-8080-exec-4] c.d.ad.users.service.UserServiceImpl - Login correcto
+2026-01-12 11:53:02 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 4372 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 11:53:02 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 11:53:02 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 11:53:03 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 11:53:04 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 11:53:04 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bca4c80c-cca7-443f-96da-5e62ed6e5515
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 11:53:04 INFO  [main] ceu.dam.ad.users.App - Started App in 2.837 seconds (process running for 3.382)
+2026-01-12 11:53:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 11:53:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 11:58:51 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 9488 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 11:58:51 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 11:58:51 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 11:58:52 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 11:58:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 11:58:53 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 53de699c-f474-4007-b3c6-e73e975eb739
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 11:58:54 INFO  [main] ceu.dam.ad.users.App - Started App in 2.7 seconds (process running for 3.258)
+2026-01-12 11:58:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 11:58:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:10:34 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 24840 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:10:34 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:10:34 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:10:35 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:10:36 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:10:36 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6faac6d3-5618-41c9-94f5-9db119f3373a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:10:36 INFO  [main] ceu.dam.ad.users.App - Started App in 2.841 seconds (process running for 3.415)
+2026-01-12 12:10:36 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:10:36 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:10:51 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 23868 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:10:51 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:10:51 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:10:52 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:10:53 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:10:54 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3fd3aa5e-a9dd-4d73-8600-2cf5f352b1c6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:10:54 INFO  [main] ceu.dam.ad.users.App - Started App in 2.785 seconds (process running for 3.332)
+2026-01-12 12:10:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:10:54 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:14:45 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 25696 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:14:45 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:14:45 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:14:46 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:14:47 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:14:48 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1e193aad-c510-413c-9a26-834338757299
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:14:48 INFO  [main] ceu.dam.ad.users.App - Started App in 2.795 seconds (process running for 3.355)
+2026-01-12 12:14:48 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:14:48 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:16:27 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 7328 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:16:27 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:16:27 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:16:28 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:16:29 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:16:29 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6dbaa06a-03bd-4489-9f21-f4e60ab3e22c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:16:30 INFO  [main] ceu.dam.ad.users.App - Started App in 2.807 seconds (process running for 3.371)
+2026-01-12 12:16:30 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:16:30 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:17:01 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 28040 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:17:01 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:17:01 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:17:02 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:17:03 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:17:03 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0025755b-9c24-4ce4-bda8-5d9b8c5b299d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:17:04 INFO  [main] ceu.dam.ad.users.App - Started App in 2.837 seconds (process running for 3.405)
+2026-01-12 12:17:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:17:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:22:55 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 16292 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:22:55 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:22:55 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:22:56 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:22:58 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:22:58 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1ccae273-7f9a-41e4-88b6-b1713255d191
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:22:58 INFO  [main] ceu.dam.ad.users.App - Started App in 2.984 seconds (process running for 3.563)
+2026-01-12 12:22:58 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:22:58 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 12:23:47 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 11796 (E:\1º DAM\Programación\_psp_2526-main\user-api-server\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main\user-api-server)
+2026-01-12 12:23:47 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 12:23:47 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 12:23:48 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 12:23:49 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 12:23:49 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 45b737ef-ab6f-412e-80c1-b52695e9c34f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 12:23:50 INFO  [main] ceu.dam.ad.users.App - Started App in 2.937 seconds (process running for 3.508)
+2026-01-12 12:23:50 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 12:23:50 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:08:43 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 19096 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:08:43 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:08:43 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:08:44 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:08:45 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:08:45 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 796bb1f6-7526-4a03-9827-1dc6b0ec1c94
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:08:46 INFO  [main] ceu.dam.ad.users.App - Started App in 2.948 seconds (process running for 3.513)
+2026-01-12 13:08:46 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 13:08:46 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:09:47 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 2076 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:09:47 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:09:47 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:09:48 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:09:49 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:09:49 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9012de2d-97a6-4bed-915f-23cea3f1e681
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:09:50 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-01-12 13:09:50 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-01-12 13:12:14 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 8272 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:12:14 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:12:14 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:12:15 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:12:16 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:12:16 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 84ad68ac-94d2-4e9c-813c-9b108ca8709b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:12:16 INFO  [main] ceu.dam.ad.users.App - Started App in 3.058 seconds (process running for 3.638)
+2026-01-12 13:12:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 13:12:16 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:12:41 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 27116 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:12:41 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:12:41 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:12:42 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:12:43 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:12:43 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 166f71e3-4343-4fc2-96a1-a4b5ca2ea693
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:12:43 INFO  [main] ceu.dam.ad.users.App - Started App in 2.989 seconds (process running for 3.565)
+2026-01-12 13:12:43 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 13:12:43 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:13:01 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 27008 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:13:01 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:13:01 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:13:02 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:13:04 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:13:04 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1d667421-5047-4794-aca6-60d19ebc8b8c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:13:04 INFO  [main] ceu.dam.ad.users.App - Started App in 3.029 seconds (process running for 3.635)
+2026-01-12 13:13:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 13:13:04 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:13:19 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 20316 (E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-navidad\_psp_2526-main\user-api-server-solucion)
+2026-01-12 13:13:19 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-01-12 13:13:19 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-01-12 13:13:20 DEBUG [main] c.dam.ad.users.security.ApiKeyFilter - Filter 'apiKeyFilter' configured for use
+2026-01-12 13:13:22 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-12 13:13:22 WARN  [main] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7624d33e-cd1b-4d50-83fc-15b377cc72b0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-01-12 13:13:22 INFO  [main] ceu.dam.ad.users.App - Started App in 3.026 seconds (process running for 3.601)
+2026-01-12 13:13:22 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-01-12 13:13:22 WARN  [main] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-01-12 13:13:22 DEBUG [http-nio-8080-exec-1] c.d.ad.users.service.UserServiceImpl - Consultando usuario con id 11

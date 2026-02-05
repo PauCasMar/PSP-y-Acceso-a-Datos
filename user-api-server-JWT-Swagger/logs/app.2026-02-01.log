@@ -1,0 +1,249 @@
+2026-02-01 11:55:18 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 3360 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 11:55:18 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 11:55:18 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 11:55:20 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 11:55:21 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 11:55:21 WARN  [main] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-01 11:55:21 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 11:55:21 INFO  [main] ceu.dam.ad.users.App - Started App in 3.469 seconds (process running for 4.158)
+2026-02-01 12:12:26 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 21744 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:12:26 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 12464 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:12:26 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:12:26 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:12:26 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:12:26 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:12:28 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:12:28 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:12:29 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthFilter': Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-02-01 12:12:29 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthFilter': Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-02-01 12:12:29 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:29 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:29 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:29 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:29 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-01 12:12:29 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-01 12:12:29 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter (field private org.springframework.security.core.userdetails.UserDetailsService ceu.dam.ad.users.security.JwtAuthenticationFilter.userDetailsService)
+↑     ↓
+|  userServiceImpl (field private org.springframework.security.crypto.password.PasswordEncoder ceu.dam.ad.users.service.UserServiceImpl.passwordEncoder)
+↑     ↓
+|  securityConfig (field private ceu.dam.ad.users.security.JwtAuthenticationFilter ceu.dam.ad.users.security.SecurityConfig.jwtAuthFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-02-01 12:12:29 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter (field private org.springframework.security.core.userdetails.UserDetailsService ceu.dam.ad.users.security.JwtAuthenticationFilter.userDetailsService)
+↑     ↓
+|  userServiceImpl (field private org.springframework.security.crypto.password.PasswordEncoder ceu.dam.ad.users.service.UserServiceImpl.passwordEncoder)
+↑     ↓
+|  securityConfig (field private ceu.dam.ad.users.security.JwtAuthenticationFilter ceu.dam.ad.users.security.SecurityConfig.jwtAuthFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-02-01 12:12:54 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 10328 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:12:54 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:12:54 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:12:56 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:12:56 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthFilter': Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-02-01 12:12:56 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:56 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:12:56 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-01 12:12:56 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter (field private org.springframework.security.core.userdetails.UserDetailsService ceu.dam.ad.users.security.JwtAuthenticationFilter.userDetailsService)
+↑     ↓
+|  userServiceImpl (field private org.springframework.security.crypto.password.PasswordEncoder ceu.dam.ad.users.service.UserServiceImpl.passwordEncoder)
+↑     ↓
+|  securityConfig (field private ceu.dam.ad.users.security.JwtAuthenticationFilter ceu.dam.ad.users.security.SecurityConfig.jwtAuthFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-02-01 12:13:25 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 10516 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:13:25 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:13:25 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:13:26 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:13:27 ERROR [main] o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService': Error creating bean with name 'userServiceImpl': Unsatisfied dependency expressed through field 'passwordEncoder': Error creating bean with name 'securityConfig': Unsatisfied dependency expressed through field 'jwtAuthFilter': Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2026-02-01 12:13:27 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:13:27 WARN  [main] o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1069)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1575)
+2026-02-01 12:13:27 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2026-02-01 12:13:27 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter (field private org.springframework.security.core.userdetails.UserDetailsService ceu.dam.ad.users.security.JwtAuthenticationFilter.userDetailsService)
+↑     ↓
+|  userServiceImpl (field private org.springframework.security.crypto.password.PasswordEncoder ceu.dam.ad.users.service.UserServiceImpl.passwordEncoder)
+↑     ↓
+|  securityConfig (field private ceu.dam.ad.users.security.JwtAuthenticationFilter ceu.dam.ad.users.security.SecurityConfig.jwtAuthFilter)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2026-02-01 12:16:45 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 13084 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:16:45 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:16:45 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:16:47 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:16:47 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:16:47 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:16:48 INFO  [main] ceu.dam.ad.users.App - Started App in 2.787 seconds (process running for 3.344)
+2026-02-01 12:21:09 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 9304 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:21:09 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:21:09 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:21:10 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:21:11 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:21:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:21:12 INFO  [main] ceu.dam.ad.users.App - Started App in 2.814 seconds (process running for 3.357)
+2026-02-01 12:38:09 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 8108 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:38:09 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:38:09 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:38:11 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:38:11 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:38:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:38:12 INFO  [main] ceu.dam.ad.users.App - Started App in 2.76 seconds (process running for 3.305)
+2026-02-01 12:40:04 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 5452 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:40:04 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:40:04 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:40:06 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:40:07 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:40:07 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:40:07 INFO  [main] ceu.dam.ad.users.App - Started App in 2.794 seconds (process running for 3.336)
+2026-02-01 12:42:40 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 21860 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:42:40 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:42:40 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:42:41 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:42:42 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:42:42 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:42:43 INFO  [main] ceu.dam.ad.users.App - Started App in 2.824 seconds (process running for 3.387)
+2026-02-01 12:55:56 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 19968 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:55:56 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:55:56 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:55:57 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:55:58 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:55:58 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:55:58 INFO  [main] ceu.dam.ad.users.App - Started App in 2.892 seconds (process running for 3.465)
+2026-02-01 12:56:42 INFO  [main] ceu.dam.ad.users.App - Starting App using Java 23 with PID 21208 (E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion\target\classes started by Paula in E:\1º DAM\Programación\_psp_2526-main2\_psp_2526-main\user-api-server-solucion)
+2026-02-01 12:56:42 DEBUG [main] ceu.dam.ad.users.App - Running with Spring Boot v3.4.1, Spring v6.2.1
+2026-02-01 12:56:42 INFO  [main] ceu.dam.ad.users.App - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 12:56:43 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-01 12:56:44 DEBUG [main] c.d.a.u.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-01 12:56:44 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 12:56:44 INFO  [main] ceu.dam.ad.users.App - Started App in 2.86 seconds (process running for 3.419)
