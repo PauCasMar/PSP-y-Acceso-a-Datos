@@ -1,10 +1,12 @@
 package ceu.dam.ad.users.exception;
 
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -29,7 +31,7 @@ public class GlobalExceptionHandler {
 	
 	@ExceptionHandler(DuplicateUserException.class)
 	public ResponseEntity<String> handle(DuplicateUserException e){
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+		return ResponseEntity.status(HttpStatus.CONFLICT)
 				.body("Usuario duplicado. " + e.getMessage());
 	}
 	
@@ -51,6 +53,27 @@ public class GlobalExceptionHandler {
 	    return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
 	            .body("Usuario o contraseña incorrectos");
 	}
+	
+	@ExceptionHandler(HttpRequestMethodNotSupportedException.class)
+	public ResponseEntity<?> handleMethodNotSupported(HttpRequestMethodNotSupportedException ex) {
+	    return ResponseEntity.status(HttpStatus.METHOD_NOT_ALLOWED)
+	        .body(Map.of("error", "Método HTTP no permitido: " + ex.getMethod()));
+	}
+	
+	//Token expirado
+	@ExceptionHandler(io.jsonwebtoken.ExpiredJwtException.class)
+	public ResponseEntity<String> handle(io.jsonwebtoken.ExpiredJwtException e) {
+	    return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+	            .body("Token expirado. Por favor, inicie sesión nuevamente.");
+	}
+
+	//Error con el token
+	@ExceptionHandler(io.jsonwebtoken.JwtException.class)
+	public ResponseEntity<String> handle(io.jsonwebtoken.JwtException e) {
+	    return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+	            .body("Token inválido: " + e.getMessage());
+	}
+	
 	
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<String> handle(Exception e){

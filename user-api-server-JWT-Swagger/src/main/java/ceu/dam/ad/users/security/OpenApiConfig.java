@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class OpenApiConfig {
+	//Configuración de OpenApi/Swagger
 
     @Bean
     public OpenAPI customOpenAPI() {

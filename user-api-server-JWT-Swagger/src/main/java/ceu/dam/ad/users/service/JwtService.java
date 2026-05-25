@@ -57,7 +57,8 @@ public class JwtService {
     }
     
     public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
-        final Claims claims = extractAllClaims(token);
+        final Claims claims = extractAllClaims(token); //Para evitar duplicar la lógica de parsing. El método extractAllClaims 
+        //es costoso (decodifica y verifica firma), y este patrón permite reutilizarlo aplicando diferentes 'extractores' sin repetir código. 
         return claimsResolver.apply(claims);
     }
     
@@ -69,8 +70,12 @@ public class JwtService {
                 .getPayload();
     }
     
-    private SecretKey getSignInKey() {
+    private SecretKey getSignInKey() { //El jwt.secret debe estar codificado en BASE64
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
-        return Keys.hmacShaKeyFor(keyBytes);
+        return Keys.hmacShaKeyFor(keyBytes); 
+    }
+    
+    public Long getExpiration() {
+        return jwtExpiration;
     }
 }

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ceu.dam.ad.users.dto.request.LoginRequestDto;
 import ceu.dam.ad.users.dto.request.NewUserRequestDto;
 import ceu.dam.ad.users.dto.request.UpdatePasswordRequestDto;
-import ceu.dam.ad.users.dto.response.LoginResponseDto;
 import ceu.dam.ad.users.dto.response.NewUserResponseDto;
 import ceu.dam.ad.users.dto.response.UserResponseDto;
 import ceu.dam.ad.users.exception.DuplicateUserException;
@@ -44,13 +43,13 @@ public class UserController {
 	public void changePassword(@PathVariable  Long id, @Valid @RequestBody UpdatePasswordRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
 		service.changePassword(id, request.getOldPassword(), request.getNewPassword());
 	}
-	
-	@PostMapping("/login")
-	@Operation(summary = "Permite hacer login a un usuario utilizando su username o su email")
-	public LoginResponseDto login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
-		User user = service.login(request.getLogin(), request.getPassword());
-		return new ModelMapper().map(user, LoginResponseDto.class);
-	}
+// El login se hace a través del AuthController 	
+//	@PostMapping("/login")
+//	@Operation(summary = "Permite hacer login a un usuario utilizando su username o su email")
+//	public LoginResponseDto login(@RequestBody @Valid LoginRequestDto request) throws UserNotFoundException, UserUnauthorizedException, UserException {
+//		User user = service.login(request.getLogin(), request.getPassword());
+//		return new ModelMapper().map(user, LoginResponseDto.class);
+//	}
 
 	@GetMapping("/{id}")
 	public UserResponseDto getById(@PathVariable Long id) throws UserNotFoundException, UserException {

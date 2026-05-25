@@ -15,4 +15,10 @@ public class AuthResponseDto {
     public AuthResponseDto(String token) {
         this.token = token;
     }
+    
+    public AuthResponseDto(String token, Long expiresIn) {
+        this.token = token;
+        this.type = "Bearer";
+        this.expiresIn = expiresIn;
+    }
 }
